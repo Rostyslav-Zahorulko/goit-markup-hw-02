@@ -1,24 +1,33 @@
+/* Основний колір фону #ffffff */
 /* Основний колір тексту #757575 */
 /* Колір тексту заголовків #212121 */
-/* Колір фрагменту тексту логотипу #000000 */
-/* Колір тексту контактних даних у футері rgba(255, 255, 255, 0.6) */
-/* Основний колір фону #FFFFFF */
-/* Колір фону секції команди #F5F4FA */
-/* Колір фону футера #2F303A */
-
-/* rgba(47, 48, 58, 0.8) */
+/* Колір фрагменту текстового логотипу #2196f3 */
+/* Колір фрагменту текстового логотипу #000000 */
+/* Колір посилань в навігаційному меню #212121 */
+/* Колір контактних даних у хедері #757575*/
+/* Колір посилань під час ховеру та фокусу #2196f3*/
+/* Колір заголовку секції-героя #ffffff */
+/* Колір фону кнопки #2196f3 */
+/* Колір тексту кнопки #ffffff */
+/* Колір тексту секції послуг #ffffff */
+/* Колір фону тексту секції послуг rgba(47, 48, 58, 0.8 */
+/* Колір фону секції команди #f5f4fa */
+/* Колір фону футера 2f303a */
+/* Колір тексту фізичної адреси студії #ffffff */
+/* Колір контактних даних у футері rgba(255, 255, 255, 0.6) */
+/* Колір заклику #ffffff */
 
 :root {
   --primary-background-color: #ffffff;
   --primary-text-color: #757575;
+  --titles-text-color: #212121;
   --logo-first-half: #2196f3;
   --logo-second-half: #000000;
   --site-navigation-links-text-color: #212121;
   --studio-contact-data-text-color: #757575;
-  --titles-text-color: #212121;
   --hover-focus-color: #2196f3;
   --hero-section-title-color: #ffffff;
-  --button-beckground-color: #2196f3;
+  --button-background-color: #2196f3;
   --button-text-color: #ffffff;
   --services-section-text-color: #ffffff;
   --services-section-text-background-color: rgba(47, 48, 58, 0.8);
@@ -78,7 +87,7 @@ h6 {
 }
 
 .button {
-  background-color: var(--button-beckground-color);
+  background-color: var(--button-background-color);
   color: var(--button-text-color);
 }
 
