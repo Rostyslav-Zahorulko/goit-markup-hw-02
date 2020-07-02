@@ -1,21 +1,28 @@
 /* Основний колір фону #ffffff */
 /* Основний колір тексту #757575 */
 /* Колір тексту заголовків #212121 */
-/* Колір фрагменту текстового логотипу #2196f3 */
-/* Колір фрагменту текстового логотипу #000000 */
+/* Колір першого фрагменту текстового логотипу #2196f3 */
+/* Колір другого фрагменту текстового логотипу #000000 */
 /* Колір посилань в навігаційному меню #212121 */
-/* Колір контактних даних у хедері #757575*/
-/* Колір посилань під час ховеру та фокусу #2196f3*/
+/* Колір контактних даних у хедері #757575 */
+/* Колір посилань під час ховеру та фокусу #2196f3 */
 /* Колір заголовку секції-героя #ffffff */
-/* Колір фону кнопки #2196f3 */
-/* Колір тексту кнопки #ffffff */
+/* Колір фону кнопки замовлення послуг #2196f3 */
+/* Колір фону кнопки замовлення послуг під час ховеру та фокусу #188CE8 */
+/* Колір тексту кнопки замовлення послуг #ffffff */
+/* Колір тексту кнопки замовлення послуг під час ховеру та фокусу #ffffff */
 /* Колір тексту секції послуг #ffffff */
-/* Колір фону тексту секції послуг rgba(47, 48, 58, 0.8 */
+/* Колір фону тексту секції послуг rgba(47, 48, 58, 0.8) */
 /* Колір фону секції команди #f5f4fa */
-/* Колір фону футера 2f303a */
+/* Колір фону футера #2f303a */
 /* Колір тексту фізичної адреси студії #ffffff */
 /* Колір контактних даних у футері rgba(255, 255, 255, 0.6) */
 /* Колір заклику #ffffff */
+/* Колір фону кнопок фільтрування робіт #f5f4fa */
+/* Колір фону кнопок фільтрування під час ховеру та фокусу #2196f3 */
+/* Колір тексту кнопок фільтрування робіт #212121 */
+/* Колір тексту кнопок фільтрування робіт під час ховеру та фокусу #ffffff */
+/* Колір тексту опису робіт #ffffff */
 
 :root {
   --primary-background-color: #ffffff;
@@ -25,10 +32,12 @@
   --logo-second-half: #000000;
   --site-navigation-links-text-color: #212121;
   --studio-contact-data-text-color: #757575;
-  --hover-focus-color: #2196f3;
+  --hover-focus-links-color: #2196f3;
   --hero-section-title-color: #ffffff;
-  --button-background-color: #2196f3;
-  --button-text-color: #ffffff;
+  --main-button-background-color: #2196f3;
+  --hover-focus-main-button-background-color: #188ce8;
+  --main-button-text-color: #ffffff;
+  --hover-focus-main-button-text-color: #ffffff;
   --services-section-text-color: #ffffff;
   --services-section-text-background-color: rgba(47, 48, 58, 0.8);
   --team-section-background-color: #f5f4fa;
@@ -36,6 +45,11 @@
   --studio-address-text-color: #ffffff;
   --studio-contacts-text-color: rgba(255, 255, 255, 0.6);
   --call: #ffffff;
+  --secondary-button-background-color: #f5f4fa;
+  --hover-focus-secondary-button-background-color: #2196f3;
+  --secondary-button-text-color: #212121;
+  --hover-focus-secondary-button-text-color: #ffffff;
+  --work-description-text-color: #ffffff;
 }
 
 body {
@@ -70,7 +84,11 @@ h6 {
 
 .site-navigation .link:hover,
 .site-navigation .link:focus {
-  color: var(--hover-focus-color);
+  color: var(--hover-focus-links-color);
+}
+
+.site-navigation .link.current {
+  color: #2196f3;
 }
 
 .studio-contacts .link {
@@ -79,16 +97,25 @@ h6 {
 
 .studio-contacts .link:hover,
 .studio-contacts .link:focus {
-  color: var(--hover-focus-color);
+  color: var(--hover-focus-links-color);
 }
 
 .hero-section-title {
   color: var(--hero-section-title-color);
 }
 
-.button {
-  background-color: var(--button-background-color);
-  color: var(--button-text-color);
+/* .button {
+} */
+
+.button.main-button {
+  background-color: var(--main-button-background-color);
+  color: var(--main-button-text-color);
+}
+
+.button.main-button:hover,
+.button.main-button:focus {
+  background-color: var(--hover-focus-main-button-background-color);
+  color: var(--hover-focus-main-button-text-color);
 }
 
 .service-section .service-title {
@@ -114,4 +141,21 @@ footer {
 
 .call {
   color: var(--call);
+}
+
+.secondary-button {
+  background-color: var(--secondary-button-background-color);
+  color: var(--secondary-button-text-color);
+}
+
+/* Стилізація сторінки Portfolio */
+
+.secondary-button:hover,
+.secondary-button:focus {
+  background-color: var(--hover-focus-secondary-button-background-color);
+  color: var(--hover-focus-secondary-button-text-color);
+}
+
+.description {
+  color: var(--work-description-text-color);
 }
