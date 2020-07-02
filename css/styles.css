@@ -11,8 +11,8 @@
 /* Колір фону кнопки замовлення послуг під час ховеру та фокусу #188CE8 */
 /* Колір тексту кнопки замовлення послуг #ffffff */
 /* Колір тексту кнопки замовлення послуг під час ховеру та фокусу #ffffff */
-/* Колір тексту секції послуг #ffffff */
-/* Колір фону тексту секції послуг rgba(47, 48, 58, 0.8) */
+/* Колір тексту підзаголовків секції занять #ffffff */
+/* Колір фону підзаголовків секції занять rgba(47, 48, 58, 0.8) */
 /* Колір фону секції команди #f5f4fa */
 /* Колір фону футера #2f303a */
 /* Колір тексту фізичної адреси студії #ffffff */
@@ -38,8 +38,8 @@
   --hover-focus-main-button-background-color: #188ce8;
   --main-button-text-color: #ffffff;
   --hover-focus-main-button-text-color: #ffffff;
-  --services-section-text-color: #ffffff;
-  --services-section-text-background-color: rgba(47, 48, 58, 0.8);
+  --services-section-subtitle-text-color: #ffffff;
+  --services-section-subtitle-text-background-color: rgba(47, 48, 58, 0.8);
   --team-section-background-color: #f5f4fa;
   --footer-background-color: #2f303a;
   --studio-address-text-color: #ffffff;
@@ -119,8 +119,8 @@ h6 {
 }
 
 .service-section .service-title {
-  background-color: var(--services-section-text-background-color);
-  color: var(--services-section-text-color);
+  background-color: var(--services-section-subtitle-text-background-color);
+  color: var(--services-section-subtitle-text-color);
 }
 
 .team-section {
