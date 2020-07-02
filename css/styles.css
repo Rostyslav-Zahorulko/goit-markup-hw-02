@@ -28,8 +28,8 @@
   --primary-background-color: #ffffff;
   --primary-text-color: #757575;
   --titles-text-color: #212121;
-  --logo-first-half: #2196f3;
-  --logo-second-half: #000000;
+  --logo-first-half-color: #2196f3;
+  --logo-second-half-color: #000000;
   --site-navigation-links-text-color: #212121;
   --studio-contact-data-text-color: #757575;
   --hover-focus-links-color: #2196f3;
@@ -44,7 +44,7 @@
   --footer-background-color: #2f303a;
   --studio-address-text-color: #ffffff;
   --studio-contacts-text-color: rgba(255, 255, 255, 0.6);
-  --call: #ffffff;
+  --call-text-color: #ffffff;
   --secondary-button-background-color: #f5f4fa;
   --hover-focus-secondary-button-background-color: #2196f3;
   --secondary-button-text-color: #212121;
@@ -55,6 +55,8 @@
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 h1,
@@ -64,22 +66,32 @@ h4,
 h5,
 h6 {
   color: var(--titles-text-color);
+  font-weight: 700;
 }
 
 .list {
   list-style: none;
 }
 
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 .logo-first-half {
-  color: var(--logo-first-half);
+  color: var(--logo-first-half-color);
 }
 
 .logo-second-half {
-  color: var(--logo-second-half);
+  color: var(--logo-second-half-color);
 }
 
 .site-navigation .link {
   color: var(--site-navigation-links-text-color);
+  font-weight: 500;
+  line-height: 1.14;
 }
 
 .site-navigation .link:hover,
@@ -93,6 +105,8 @@ h6 {
 
 .studio-contacts .link {
   color: var(--studio-contact-data-text-color);
+  font-weight: 500;
+  line-height: 1.14;
 }
 
 .studio-contacts .link:hover,
@@ -102,6 +116,12 @@ h6 {
 
 .hero-section-title {
   color: var(--hero-section-title-color);
+  /* background-color: green; */
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* .button {
@@ -140,7 +160,7 @@ footer {
 }
 
 .call {
-  color: var(--call);
+  color: var(--call-text-color);
 }
 
 .secondary-button {
