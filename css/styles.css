@@ -27,10 +27,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  background-color: var(--primaty-background-color);
 }
 
 /* Header */
+
+.header {
+  background-color: var(--primaty-background-color);
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -90,6 +93,12 @@ body {
 }
 
 .modal-window-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: #ffffff;
   background-color: #2196f3;
 }
@@ -177,5 +186,45 @@ body {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  color: #ffffff;
+}
+
+/* Portfolio */
+
+.filter-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  color: var(--primary-text-color);
+  background-color: #f5f4fa;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.works-list-item-link-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+
+.works-list-item-link-definition {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
+}
+
+.works-list-item-linl-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
   color: #ffffff;
 }
