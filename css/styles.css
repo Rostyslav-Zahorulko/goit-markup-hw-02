@@ -93,7 +93,6 @@ body {
 }
 
 .modal-window-button {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -192,11 +191,11 @@ body {
 /* Portfolio */
 
 .filter-button {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: #f5f4fa;
 }
