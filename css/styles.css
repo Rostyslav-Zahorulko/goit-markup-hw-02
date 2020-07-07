@@ -224,7 +224,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-.works-list-item-linl-description {
+.works-list-item-link-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.55;
