@@ -16,17 +16,20 @@ font-weight: 900; */
 /* Колір фону футера #2f303a */
 
 :root {
+  --primary-font-family: 'Roboto', sans-serif;
+  --secondary-font-family: 'Raleway', sans-serif;
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --primaty-background-color: #ffffff;
+  --primary-background-color: #ffffff;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--primary-font-family);
   font-size: 14px;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
 }
 
 /* Header */
@@ -36,7 +39,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -170,14 +173,14 @@ body {
   color: #ffffff;
 }
 
-.contact-data-item-link {
+.contact-data-list-item-link {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contact-data-item-link.physical-address {
+.contact-data-list-item-link.physical-address {
   color: #ffffff;
 }
 
